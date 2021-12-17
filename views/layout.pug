@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/javascripts/users.js"></script>
+  body(class="blue-grey lighten-4")
+    include menu.pug
+    div(id="content" class="container")
+      block content

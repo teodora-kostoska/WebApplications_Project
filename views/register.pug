@@ -1,0 +1,15 @@
+extends layout 
+block content 
+    div(class="row")
+        div(class="col s12")
+                div(class="card blue-grey")
+                    h1(class="card-header white-text") Register 
+                    div(id="error3" class="card-panel blue-grey lighten-1")
+                    form(action="" id="register-form" method="POST" )
+                        label(for="username" class="white-text") Username 
+                        input(type="text" class="white-text" name="username" id="username" required)
+        
+                        label(for="password" class="white-text") Password 
+                        input(type="password" class="white-text" name="password" id="password" required)
+                        button(class="btn blue-grey darken-2" type = "submit") Register 
+    script(src="/javascripts/register.js")
